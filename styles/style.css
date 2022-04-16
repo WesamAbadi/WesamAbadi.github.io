@@ -1,0 +1,37 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  color: whitesmoke;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body a {
+  text-decoration: none;
+  color: darkcyan;
+}
+
+#wisam {
+  border-radius: 2rem;
+  border: 3px solid white;
+  width: 200px;
+  height: 200px;
+  background-color: antiquewhite;
+}
+
+.container {
+  text-align: center;
+}
+
+.card {
+  display: block;
+  height: 100vh;
+}
+
+.card h1 {
+  padding-top: 20%;
+}
+/*# sourceMappingURL=style.css.map */
