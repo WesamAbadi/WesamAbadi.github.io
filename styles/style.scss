@@ -1,10 +1,12 @@
 html{
-    
+    margin: 0%;
     scroll-behavior: smooth;
 }
 body{
-    margin: 0;
+    
     background-color: black;
+    background-image: url(/images/bg8.jpg);
+    margin: 0;
     color: whitesmoke;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     //overflow: hidden;
@@ -14,28 +16,44 @@ body{
     }
 }
 #wisam{
-    border-radius: 2rem;
-    border: 3px solid white;
-    width: 200px;
-    height: 200px;
-    background-color: antiquewhite;
-
+    
+    border-radius: 1rem;
+    //border: 1px solid rgb(197, 180, 180);
+    width: 100px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    color: whitesmoke;
+    cursor: pointer;
 }
 
 .container{
 
 text-align: center;
 }
-.card {
+ //background-color: darkblue;
 
-    //background-color: darkblue;
-}
 .card{
+    
     h1 {
         padding-top: 20%;
     }
     display: block;
     height: 100vh;
+    display: grid;
+    place-content: center;
 }
+#intro{
+}
+
+.inside{
+    height: 50vh;
+    width: 500px;
+    border-radius: 2rem;
+    background-color: darkblue;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
+}
+
 
 
