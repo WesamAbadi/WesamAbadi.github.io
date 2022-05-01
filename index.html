@@ -10,31 +10,74 @@
 </head>
 
 <body>
+
+
+
+
     <div class="container">
 
 
         <div id="intro" class="card">
-            <div class="inside" id="first">
-
-                <h1>I am Wesam,</h1>
-                <h3>And this is my Portfolio site!</h3>
-                <button onclick="location.href='#hola';" id="wisam">Who am I?</button>
-            </div>
-
-
-
-
-        </div>
-
-        <div id="hola" class="card">
             <div class="inside">
-                <h1>HOLA</h1>
+                <h1 id="wisam">i AM WesaM,</h1>
+                <h3 style="margin-bottom: 80px;">AND THIS IS MY PORTFOLIO SITE!</h3>
+                <button onclick="location.href='#about';">▼</button>
+            </div>
+
+
+
+        </div>
+        <div id="bar">
+            <ul>
+                <a href='#intro'>INTRO</a>
+            </ul>
+            <ul>
+                <a href='#about'>ABOUT</a>
+            </ul>
+            <ul>
+                <a href='#mapDiv'>MAP</a>
+            </ul>
+            <ul>
+                <a href='#links'>LINKS</a>
+            </ul>
+
+        </div>
+        <div id="about" class="card">
+            <div class="inside">
+                <h1>ABOUT ME !</h1>
+                <p>My name is Wesam ABADI and I study CSE in University of Pecs.</p>
+                <p>I was born and raised in Palestine, Jenin 🇵🇸</p>
+
+                <p>I enjoy coding in my free time, and some video games wouldn't hurt ;)</p>
+                <br>
+                <p> ⬅️ On the left you can see a progress bar to navigate through pages.</p>
+                <p style="font-size: 18px;"> Finally, in the next page you will find a map of my coutry Palestine where
+                    it shows the beauty of
+                    the coutry and the places you might want to consider visiting!</p>
+                <button class="navigation" onclick="location.href='#mapDiv';">▼</button>
 
             </div>
         </div>
+
+
+        <div id="mapDiv" class="card">
+            <div class="inside" id="second">
+                <div id="map">
+                    <img src="/images/1917.png" alt="">
+                    <button class="city-btn" id="jenin">🔴</button>
+                    <button class="city-btn" id="jerusalem">🟦</button>
+                </div>
+                <div id="cities">
+                    <h1>HOLA</h1>
+                </div>
+
+
+            </div>
+        </div>
+
         <div class="card">
-            <div class="inside">
-                <h1>HI</h1>
+            <div id="links" class="inside">
+                <h1>Links</h1>
 
             </div>
         </div>

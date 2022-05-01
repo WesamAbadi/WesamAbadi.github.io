@@ -1,14 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
 html {
+  overflow: hidden;
   margin: 0%;
+  padding: 0%;
   scroll-behavior: smooth;
+  font-family: 'Baloo 2', cursive;
+}
+
+#bar {
+  border: solid 1px white;
+  border-radius: 1rem;
+  width: 90px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 40%;
+  text-align: center;
+  z-index: 5;
+}
+
+#bar ul {
+  margin-left: -40%;
+}
+
+#bar ul a {
+  text-decoration: none;
+  color: white;
 }
 
 body {
   background-color: black;
-  background-image: url(/images/bg8.jpg);
   margin: 0;
   color: whitesmoke;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body a {
@@ -16,9 +39,10 @@ body a {
   color: darkcyan;
 }
 
-#wisam {
-  border-radius: 1rem;
-  width: 100px;
+button {
+  border-radius: 50%;
+  border: 0px solid white;
+  width: 50px;
   height: 50px;
   background-color: rgba(0, 0, 0, 0.5);
   -webkit-backdrop-filter: blur(10px);
@@ -43,13 +67,78 @@ body a {
   padding-top: 20%;
 }
 
+#intro {
+  background-image: url(/images/bg3.png);
+  background-size: cover;
+}
+
+#wisam {
+  font-family: 'Major Mono Display', monospace;
+}
+
+#second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 99vw;
+}
+
 .inside {
   height: 50vh;
   width: 500px;
   border-radius: 2rem;
-  background-color: darkblue;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.2);
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
+}
+
+#map {
+  position: absolute;
+  right: 10%;
+  border: 1px solid #c5b4b4;
+}
+
+#map img {
+  height: 600px;
+  position: relative;
+}
+
+#cities {
+  border: 1px solid #c5b4b4;
+  position: absolute;
+  left: 20%;
+}
+
+#jenin {
+  position: absolute;
+  color: red;
+  top: 15%;
+  left: 48%;
+}
+
+#jerusalem {
+  position: absolute;
+  color: red;
+  top: 36%;
+  left: 47%;
+}
+
+.city-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0%;
+  border: 0px solid #00a687;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
+  color: whitesmoke;
+  cursor: help;
 }
 /*# sourceMappingURL=style.css.map */
