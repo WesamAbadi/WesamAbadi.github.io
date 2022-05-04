@@ -9,6 +9,8 @@ html {
 }
 
 #bar {
+  font-family: 'Major Mono Display', monospace;
+  font-weight: bold;
   border: solid 1px white;
   border-radius: 1rem;
   width: 90px;
@@ -39,6 +41,10 @@ body a {
   color: darkcyan;
 }
 
+body h1 {
+  font-family: 'Major Mono Display', monospace;
+}
+
 button {
   border-radius: 50%;
   border: 0px solid white;
@@ -64,6 +70,8 @@ button {
   display: -ms-grid;
   display: grid;
   place-content: center;
+  -webkit-animation: fadeIn 4s;
+          animation: fadeIn 4s;
 }
 
 #intro {
@@ -72,8 +80,18 @@ button {
 }
 
 #wisam {
+  border: 0px solid white;
   font-family: 'Major Mono Display', monospace;
   padding-top: 20%;
+  -webkit-animation: border 2s;
+          animation: border 2s;
+}
+
+#about h1 {
+  -webkit-animation: loop 1s;
+          animation: loop 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 #second {
@@ -116,10 +134,11 @@ button {
 }
 
 #jerusalem {
+  font-size: 33px;
   position: absolute;
   color: red;
-  top: 56%;
-  right: 47%;
+  top: 44%;
+  right: 46%;
 }
 
 #gaza {
@@ -167,6 +186,10 @@ button {
   text-decoration: none;
   color: gainsboro;
   padding: 10px;
+  -webkit-animation: loop 2s;
+          animation: loop 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .animate {
@@ -189,6 +212,48 @@ button {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes border {
+  0% {
+    border: 100px solid rgba(255, 255, 255, 0);
+  }
+  100% {
+    border: 0px solid rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes border {
+  0% {
+    border: 100px solid rgba(255, 255, 255, 0);
+  }
+  100% {
+    border: 0px solid rgba(255, 255, 255, 0);
+  }
+}
+
+@-webkit-keyframes loop {
+  0% {
+    margin-left: 0px;
+  }
+  50% {
+    margin-left: 4px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes loop {
+  0% {
+    margin-left: 0px;
+  }
+  50% {
+    margin-left: 4px;
+  }
+  100% {
+    margin-left: 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */

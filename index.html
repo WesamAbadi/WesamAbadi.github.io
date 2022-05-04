@@ -12,9 +12,6 @@
 
 <body>
 
-
-
-
     <div class="container">
 
 
@@ -25,27 +22,25 @@
                 <button onclick="location.href='#about';">▼</button>
             </div>
 
-
-
         </div>
         <div id="bar">
             <ul>
-                <a href='#intro'>INTRO</a>
+                <a href='#intro'>intRo</a>
             </ul>
             <ul>
-                <a href='#about'>ABOUT</a>
+                <a href='#about'>About</a>
             </ul>
             <ul>
-                <a href='#mapDiv'>MAP</a>
+                <a href='#mapDiv'>MAp</a>
             </ul>
             <ul>
-                <a href='#links'>LINKS</a>
+                <a href='#links'>links</a>
             </ul>
 
         </div>
         <div id="about" class="card">
             <div class="inside">
-                <h1>ABOUT ME !</h1>
+                <h1>About Me !</h1>
                 <p>My name is Wesam ABADI and I study CSE in University of Pecs.</p>
                 <p>I was born and raised in Palestine, Jenin 🇵🇸</p>
 
@@ -64,7 +59,7 @@
         <div id="mapDiv" class="card">
             <div class="inside" id="second">
                 <div id="cities">
-                    <h1 id="title">PALESTINE</h1>
+                    <h1 id="title">pAlestine</h1>
                     <p id="describe"></p>
                     <img id="imagee" src="/images//palestinew.jpg" alt="">
                 </div>
@@ -73,7 +68,7 @@
                     <br>
                     <img src="/images/1917.png" alt="">
                     <button class="city-btn" id="jenin">🔴</button>
-                    <button class=" city-btn" id="jerusalem">🟦</button>
+                    <button class=" city-btn" id="jerusalem">🕌</button>
                     <button class=" city-btn" id="gaza">🔴</button>
                     <button class=" city-btn" id="nablus">🔴</button>
                     <button class=" city-btn" id="haifa">🔴</button>
@@ -84,68 +79,18 @@
 
         <div class="card">
             <div id="links" class="inside">
-                <h1>Links</h1>
+                <h1>links</h1>
                 <a href="https://www.linkedin.com/in/wesamabadi" target="_blank"><i
                         class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/WesamAbadi" target="_blank"><i class="fa-brands fa-github"></i></a>
                 <a href="mailto: wisamabady7@gmail.com""><i class=" fa-solid fa-envelope"></i></a>
-                <a href="tel:+36205348388"><i class="fa-solid fa-phone"></i></a>
+                <a href="tel:+36205348388"><i class="fa-solid fa-phone" id="phone"></i></a>
             </div>
             <h3>Thank you for the time!</h3>
         </div>
 
     </div>
-    <script>
-
-        document.getElementById("jerusalem").addEventListener("click", jerusalem);
-        document.getElementById("jenin").addEventListener("click", jenin);
-        document.getElementById("gaza").addEventListener("click", gaza);
-        document.getElementById("nablus").addEventListener("click", nablus);
-        document.getElementById("haifa").addEventListener("click", haifa);
-        var info = document.getElementById("cities");
-
-        function jerusalem() {
-            document.getElementById("title").innerHTML = "Jerusalem";
-            document.getElementById("describe").innerHTML = "It is the political and economic capital of Palestine. It is famous for a number of important religious monuments, whether in the Islamic or Christian religions. In Jerusalem, there is Al-Aqsa Mosque, the first of the two qiblahs, the Dome of the Rock, and the Church of the Holy Sepulcher.";
-            document.getElementById("imagee").src = "/images/jerusalem3.jpeg";
-            info.classList.remove("animate");
-            info.offsetWidth;
-            info.classList.add("animate");
-
-        }
-        function jenin() {
-            info.classList.remove("animate");
-            info.offsetWidth;
-            info.classList.add("animate");
-            document.getElementById("title").innerHTML = "Jenin";
-            document.getElementById("describe").innerHTML = " It is located in the northern West Bank of the Palestinian Authority and its center is Jenin. The governorate constitutes an economic weight much greater than its population size. It has a population of about 256,000. Its area is 583 km2 and constitutes 9.7% of the total area of the West Bank. It follows the city of Jenin.";
-            document.getElementById("imagee").src = "/images/jenin.jpg";
-        }
-        function nablus() {
-            info.classList.remove("animate");
-            info.offsetWidth;
-            info.classList.add("animate");
-            document.getElementById("title").innerHTML = "Nablus";
-            document.getElementById("describe").innerHTML = " It is located north of Jerusalem, between the mountains of Ebal and Gerizim, and is famous for its soap and sweets industry. It is the administrative, cultural and economic center of the Nablus Mountains region; Which led to its prosperity and urban expansion in all directions, especially towards the east and west.";
-            document.getElementById("imagee").src = "/images/nablus.jpg";
-        }
-        function gaza() {
-            info.classList.remove("animate");
-            info.offsetWidth;
-            info.classList.add("animate");
-            document.getElementById("title").innerHTML = "Gaza";
-            document.getElementById("describe").innerHTML = " It has always been an important center on the transportation and trade routes between Palestine and Egypt, and between the Mediterranean, the Red Sea and the Arabian Peninsula. It is also the cultural and administrative center for the southern region of Palestine. Gaza is famous for its cultivation of vegetables, citrus fruits and flowers, and it is where Imam al-Shafi’i was born, and where the tomb of Hashem bin Abd Manaf is, and that is why it was called Gaza Hashem.";
-            document.getElementById("imagee").src = "/images/Gaza.jpeg";
-        }
-        function haifa() {
-            info.classList.remove("animate");
-            info.offsetWidth;
-            info.classList.add("animate");
-            document.getElementById("title").innerHTML = "Haifa";
-            document.getElementById("describe").innerHTML = " One of the famous Palestinian cities, which is known as the Bride of Carmel; Because of the presence of Mount Carmel on its land, which is considered one of the most famous Palestinian mountains.";
-            document.getElementById("imagee").src = "/images/haifa1.jpeg";
-        }   
-    </script>
+    <script src="/JS/index.js"></script>
 </body>
 
 </html>
