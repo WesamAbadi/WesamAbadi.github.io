@@ -56,15 +56,14 @@ button {
 }
 
 .card {
+  /* h1 {
+        padding-top: 20%;
+    } */
   display: block;
   height: 100vh;
   display: -ms-grid;
   display: grid;
   place-content: center;
-}
-
-.card h1 {
-  padding-top: 20%;
 }
 
 #intro {
@@ -74,6 +73,7 @@ button {
 
 #wisam {
   font-family: 'Major Mono Display', monospace;
+  padding-top: 20%;
 }
 
 #second {
@@ -83,7 +83,7 @@ button {
   width: 99vw;
 }
 
-.inside {
+.inside -second {
   height: 50vh;
   width: 500px;
   border-radius: 2rem;
@@ -93,34 +93,54 @@ button {
 }
 
 #map {
-  position: absolute;
-  right: 10%;
-  border: 1px solid #c5b4b4;
-}
-
-#map img {
-  height: 600px;
   position: relative;
 }
 
 #cities {
-  border: 1px solid #c5b4b4;
-  position: absolute;
-  left: 20%;
+  margin-left: 85px;
+  float: left;
+  width: 50vw;
+  text-align: center;
+}
+
+#cities img {
+  height: 500px;
+  border-radius: 1rem;
 }
 
 #jenin {
   position: absolute;
   color: red;
-  top: 15%;
-  left: 48%;
+  top: 21%;
+  left: 51%;
 }
 
 #jerusalem {
   position: absolute;
   color: red;
-  top: 36%;
-  left: 47%;
+  top: 56%;
+  right: 47%;
+}
+
+#gaza {
+  position: absolute;
+  color: red;
+  top: 49%;
+  right: 60%;
+}
+
+#nablus {
+  position: absolute;
+  color: red;
+  top: 28%;
+  right: 43%;
+}
+
+#haifa {
+  position: absolute;
+  color: red;
+  top: 35%;
+  right: 53%;
 }
 
 .city-btn {
@@ -140,5 +160,35 @@ button {
           backdrop-filter: blur(0px);
   color: whitesmoke;
   cursor: help;
+}
+
+#links a {
+  font-size: 28px;
+  text-decoration: none;
+  color: gainsboro;
+  padding: 10px;
+}
+
+.animate {
+  -webkit-animation: fadeIn .4s;
+          animation: fadeIn .4s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */
