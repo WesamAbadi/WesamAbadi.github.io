@@ -81,7 +81,7 @@ button{
     background-image: url(/images/bg3.png);
     background-size:cover;
     width: calc(100% + var(--_offset));
-    transform: translateX(calc(-1 * (--_offset / 2)))
+    transform: translateX(calc(-1 * var(--_offset) / 2))
 }
 
 #wisam{
