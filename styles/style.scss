@@ -60,8 +60,8 @@ button{
 }
 
 .container{
-    
     text-align: center;
+    margin-inline: auto;
 }
 //background-color: darkblue;
 
@@ -77,8 +77,11 @@ button{
     animation: fadeIn 4s;
 }
 #intro{
-     background-image: url(/images/bg3.png);
+    --_offset: 15%;
+    background-image: url(/images/bg3.png);
     background-size:cover;
+    width: calc(100% + var(--_offset));
+    transform: translateX(calc(-1 * (--_offset / 2)))
 }
 
 #wisam{
