@@ -9,6 +9,7 @@ import {
   FaPhp,
   FaPython,
   FaChrome,
+  FaSymfony,
 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa6";
 import { DiSqllite } from "react-icons/di";
@@ -26,8 +27,13 @@ function Home() {
         <div className="row">
           <div className="col-5 hero-text">
             <div>
-              <h2>Hi, I'm</h2>
-              <h1>Wesam Abadi</h1>
+              <h2>hi, I'm</h2>
+              <div className="name">
+                <span class="w">W</span>
+                <span>esam </span>
+                <span class="a">A</span>
+                <span>badi</span>
+              </div>
               <div className="full-stack">
                 <p>Full-Stack Developer</p>
                 <div className="stacks">
@@ -49,6 +55,7 @@ function Home() {
                       <BiLogoSpringBoot />
                       <FaJava />
                       <FaPhp />
+                      <FaSymfony />
                       <DiSqllite />
                       <SiMysql />
                       <FaPython />
