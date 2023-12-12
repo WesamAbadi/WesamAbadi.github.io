@@ -1,10 +1,23 @@
 import React from "react";
 import { IoLogoGithub } from "react-icons/io";
 import { SiSvelte, SiMysql, SiApachemaven } from "react-icons/si";
-import { FaReact, FaSass, FaPython, FaChrome } from "react-icons/fa";
+import {
+  FaHtml5,
+  FaReact,
+  FaSass,
+  FaJava,
+  FaPhp,
+  FaPython,
+  FaChrome,
+} from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa6";
 import { DiSqllite } from "react-icons/di";
 import { BiLogoSpringBoot } from "react-icons/bi";
-import { IoLogoFirebase, IoLogoWindows } from "react-icons/io5";
+import {
+  IoLogoJavascript,
+  IoLogoFirebase,
+  IoLogoWindows,
+} from "react-icons/io5";
 
 function Home() {
   return (
@@ -15,7 +28,34 @@ function Home() {
             <div>
               <h2>Hi, I'm</h2>
               <h1>Wesam Abadi</h1>
-              <p>Front End Developer</p>
+              <div className="full-stack">
+                <p>Full-Stack Developer</p>
+                <div className="stacks">
+                  <div className="my-stack">
+                    Front End
+                    <p className="my-stack">
+                      <FaHtml5 />
+                      <FaCss3Alt />
+                      <IoLogoJavascript />
+                      <FaSass />
+                      <IoLogoFirebase />
+                      <FaReact />
+                      <SiSvelte />
+                    </p>
+                  </div>
+                  <div className="my-stack">
+                    Back End
+                    <p>
+                      <BiLogoSpringBoot />
+                      <FaJava />
+                      <FaPhp />
+                      <DiSqllite />
+                      <SiMysql />
+                      <FaPython />
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div className="col-7">
@@ -54,23 +94,23 @@ function Home() {
                     <p>Movie streaming & rating site.</p>
                     <div className="stack">
                       <SiSvelte />
+                      <IoLogoFirebase />
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div target="_blank" rel="noreferrer" className="project">
+                <a href="https://wesamabadi.com">
+                  <div className="project-div">
+                    <h3>Website Alchemist</h3>
+                    <p>A Chrome extension to add custom code to any website.</p>
+                    <div className="stack">
+                      <FaChrome />
                     </div>
                   </div>
                 </a>
               </div>
 
-              <div target="_blank" rel="noreferrer" className="project">
-                <a href="https://wesamabadi.com">
-                  <div className="project-div">
-                    <h3>Foto</h3>
-                    <p>Photo-hosting website made using Django.</p>
-                    <div className="stack">
-                      <FaPython />
-                      <DiSqllite />
-                    </div>
-                  </div>
-                </a>
-              </div>
               <div target="_blank" rel="noreferrer" className="project">
                 <a href="https://wesamabadi.com">
                   <div className="project-div">
@@ -101,10 +141,11 @@ function Home() {
               <div target="_blank" rel="noreferrer" className="project">
                 <a href="https://wesamabadi.com">
                   <div className="project-div">
-                    <h3>Website Alchemist</h3>
-                    <p>A Chrome extension to add custom code to any website.</p>
+                    <h3>Foto</h3>
+                    <p>Photo-hosting website made using Django.</p>
                     <div className="stack">
-                      <FaChrome />
+                      <FaPython />
+                      <DiSqllite />
                     </div>
                   </div>
                 </a>

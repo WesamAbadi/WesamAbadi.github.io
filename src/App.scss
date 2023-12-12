@@ -11,7 +11,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background-color:rgb(0 0 0 / 40%);
+  background-color: rgb(0 0 0 / 40%);
   border-radius: 10px;
 }
 
@@ -37,12 +37,32 @@ body {
       .projects-title {
         h2 {
           text-align: center;
+          margin-bottom: 3rem;
         }
       }
       .hero-text {
         display: flex;
         align-items: center;
         justify-content: center;
+        .full-stack {
+          border-left: solid 1px #272727;
+          padding-left: 10px;
+          color: white;
+          margin-bottom: 0.5rem;
+        }
+        .my-stack {
+          color: #ffffffb2;
+          margin-bottom: 1px;
+          svg {
+            color: rgb(255 255 255 / 17%);
+            transition: all 0.2s;
+            margin: 0 1px;
+            font-size: 20px;
+            &:hover {
+              color: white;
+            }
+          }
+        }
       }
       .projects {
         display: grid;
@@ -50,7 +70,7 @@ body {
         grid-template-columns: 1fr 1fr;
         overflow-y: auto;
         scroll-behavior: smooth;
-        max-height: 500px;
+        max-height: 490px;
         .project {
           border: solid 1px rgba(255, 255, 255, 0);
           margin: 10px;
