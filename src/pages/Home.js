@@ -1,8 +1,10 @@
 import React from "react";
 import { IoLogoGithub } from "react-icons/io";
-import { SiSvelte } from "react-icons/si";
-import { FaReact, FaSass } from "react-icons/fa";
-import { IoLogoFirebase } from "react-icons/io5";
+import { SiSvelte, SiMysql, SiApachemaven } from "react-icons/si";
+import { FaReact, FaSass, FaPython, FaChrome } from "react-icons/fa";
+import { DiSqllite } from "react-icons/di";
+import { BiLogoSpringBoot } from "react-icons/bi";
+import { IoLogoFirebase, IoLogoWindows } from "react-icons/io5";
 
 function Home() {
   return (
@@ -60,8 +62,50 @@ function Home() {
               <div target="_blank" rel="noreferrer" className="project">
                 <a href="https://wesamabadi.com">
                   <div className="project-div">
-                    <h3>Project 3</h3>
-                    <p>Description of project 3</p>
+                    <h3>Foto</h3>
+                    <p>Photo-hosting website made using Django.</p>
+                    <div className="stack">
+                      <FaPython />
+                      <DiSqllite />
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div target="_blank" rel="noreferrer" className="project">
+                <a href="https://wesamabadi.com">
+                  <div className="project-div">
+                    <h3>Events Manager</h3>
+                    <p>
+                      Spring boot app to manage events, seminars and workshops.
+                    </p>
+                    <div className="stack">
+                      <BiLogoSpringBoot />
+                      <SiMysql />
+                      <SiApachemaven />
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div target="_blank" rel="noreferrer" className="project">
+                <a href="https://wesamabadi.com">
+                  <div className="project-div">
+                    <h3>Product Price Tracker</h3>
+                    <p>A product price tracker and price chart maker.</p>
+                    <div className="stack">
+                      <FaPython />
+                      <IoLogoWindows />
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div target="_blank" rel="noreferrer" className="project">
+                <a href="https://wesamabadi.com">
+                  <div className="project-div">
+                    <h3>Website Alchemist</h3>
+                    <p>A Chrome extension to add custom code to any website.</p>
+                    <div className="stack">
+                      <FaChrome />
+                    </div>
                   </div>
                 </a>
               </div>
