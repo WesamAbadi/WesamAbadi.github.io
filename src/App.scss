@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;600;700&display=swap");
+body {
+  background: radial-gradient(circle, rgb(12 13 14) 0%, rgb(0, 0, 0) 100%);
+  font-family: "Afacad", sans-serif;
+  color: white;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90svh;
+    .row {
+      display: flex;
+      .projects-title {
+        h2 {
+          text-align: center;
+        }
+      }
+      .hero-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .projects {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+
+        .project {
+          border: solid 1px white;
+          margin: 10px;
+          border-radius: 1rem;
+          text-align: center;
+          a {
+            height: 100%;
+            display: block;
+            padding: 10px;
+            transition: padding 0.5s;
+            .project-div {
+              display: grid;
+              align-content: space-between;
+              height: 100%;
+              .stack {
+                border-top: 1px solid #ffffff0d;
+                padding-top: 5px;
+                font-size: 20px;
+                svg{
+                  margin: 0 5px;
+                }
+              }
+            }
+            &:hover {
+            }
+          }
+        }
+      }
+    }
+  }
+}
