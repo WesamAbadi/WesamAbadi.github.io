@@ -107,7 +107,7 @@ function Home() {
                 </a>
               </div>
               <div target="_blank" rel="noreferrer" className="project">
-                <a href="https://wesamabadi.com">
+                <a href="https://github.com/WesamAbadi/WebsiteAlchemist">
                   <div className="project-div">
                     <h3>Website Alchemist</h3>
                     <p>A Chrome extension to add custom code to any website.</p>
@@ -119,7 +119,7 @@ function Home() {
               </div>
 
               <div target="_blank" rel="noreferrer" className="project">
-                <a href="https://wesamabadi.com">
+                <a href="https://events-manager2.onrender.com/">
                   <div className="project-div">
                     <h3>Events Manager</h3>
                     <p>
@@ -134,7 +134,7 @@ function Home() {
                 </a>
               </div>
               <div target="_blank" rel="noreferrer" className="project">
-                <a href="https://wesamabadi.com">
+                <a href="https://github.com/WesamAbadi/Product-price-tracker">
                   <div className="project-div">
                     <h3>Product Price Tracker</h3>
                     <p>A product price tracker and price chart maker.</p>
@@ -146,7 +146,7 @@ function Home() {
                 </a>
               </div>
               <div target="_blank" rel="noreferrer" className="project">
-                <a href="https://wesamabadi.com">
+                <a href="https://github.com/ExtrosDevs/Foto">
                   <div className="project-div">
                     <h3>Foto</h3>
                     <p>Photo-hosting website made using Django.</p>

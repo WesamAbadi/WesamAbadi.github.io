@@ -50,8 +50,9 @@ body {
             font-size: 3rem;
             &.w,
             &.a {
-              background: linear-gradient(to right, #1a1a1a, #ffc240);
+              background: linear-gradient(90deg, #3b3b3b, #ffd478);
               -webkit-background-clip: text;
+              background-clip: text;
               color: transparent;
               display: inline-block;
             }
@@ -91,7 +92,7 @@ body {
           filter: blur(3px);
         }
         .project {
-          border: 1px solid #ffffff45;
+          border: 1px solid hsl(0deg 0% 100% / 5%);
           // border-image: linear-gradient(to right, #1a1a1a, #ffc240);
           // border-image-slice: 1;
           padding: 10px;
@@ -112,6 +113,9 @@ body {
               display: grid;
               align-content: space-between;
               height: 100%;
+              p{
+                color: #bfbfbf;
+              }
               .stack {
                 border-top: 1px solid #ffffff0d;
                 padding-top: 5px;
