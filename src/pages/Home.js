@@ -25,7 +25,7 @@ function Home() {
     <div className="hero">
       <div className="container">
         <div className="row">
-          <div className="col-5 hero-text">
+          <div className="col-12 col-md-5 hero-text">
             <div>
               <h2>hi, I'm</h2>
               <div className="name">
@@ -65,7 +65,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="col-7">
+          <div className="col-12 col-md-7">
             <div className="projects-title">
               <h2>Projects</h2>
             </div>
