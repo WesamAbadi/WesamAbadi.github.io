@@ -157,7 +157,7 @@ function Home() {
                   </div>
                 </a>
               </div>
-              <div target="_blank" rel="noreferrer" className="project">
+              <div target="_blank" rel="noreferrer" className="project github">
                 <a href="https://github.com/WesamAbadi">
                   <div className="project-div">
                     <h3>
