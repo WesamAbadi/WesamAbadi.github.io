@@ -27,7 +27,7 @@ function Home() {
         <div className="row">
           <div className="col-12 col-md-5 hero-text">
             <div>
-              <h2>hi, I'm</h2>
+              <div className="hello" >hi, I'm</div>
               <div className="name">
                 <span class="w">W</span>
                 <span>esam </span>
