@@ -27,7 +27,7 @@ function Home() {
         <div className="row">
           <div className="col-12 col-md-5 hero-text">
             <div>
-              <div className="hello" >hi, I'm</div>
+              <div className="hello">hi, I'm</div>
               <div className="name">
                 <span class="w">W</span>
                 <span>esam </span>
@@ -119,7 +119,7 @@ function Home() {
               </div>
 
               <div target="_blank" rel="noreferrer" className="project">
-                <a href="https://events-manager2.onrender.com/">
+                <a href="https://eventmanager.wesamabadi.com">
                   <div className="project-div">
                     <h3>Events Manager</h3>
                     <p>

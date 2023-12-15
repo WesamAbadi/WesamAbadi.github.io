@@ -12,6 +12,7 @@
 /build
 .firebaserc
 .cache
+ignoreme.*
 # misc
 .DS_Store
 .env.local
