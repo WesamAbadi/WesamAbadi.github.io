@@ -5,7 +5,7 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import "../styles/Header.scss";
 
 function Header() {
-  const fileUrl = process.env.PUBLIC_URL + "/ppt.pptx";
+  // const fileUrl = process.env.PUBLIC_URL + "/ppt.pptx";
   return (
     <div className="header">
       <a href="https://github.com/WesamAbadi">
@@ -23,11 +23,11 @@ function Header() {
           <FaLinkedinIn />
         </div>
       </a>
-      <div>
+      {/* <div>
         <a href={fileUrl} download>
           PPT
         </a>
-      </div>
+      </div> */}
     </div>
   );
 }
