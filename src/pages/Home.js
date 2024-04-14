@@ -21,6 +21,59 @@ import {
 } from "react-icons/io5";
 
 function Home() {
+  const projects = [
+    {
+      name: "Language Master",
+      url: "https://language.wesamabadi.com",
+      description:
+        "Language Learning App With Interactive Lessons & Real-time Progress Tracking.",
+      stack: [<FaReact />, <IoLogoFirebase />, <FaSass />],
+    },
+    {
+      name: "Chabase",
+      url: "https://chat.wesamabadi.com/",
+      description: "A real-time chatting website using React.js and Firebase.",
+      stack: [<FaReact />, <IoLogoFirebase />, <FaSass />],
+    },
+    {
+      name: "Note Fuse",
+      url: "https://github.com/WesamAbadi/NoteFuse",
+      description: "A cross-platform note-taking app built with Flutter.",
+      stack: [<FaReact />, <IoLogoFirebase />, <FaSass />],
+    },
+    {
+      name: "Events Manager",
+      url: "https://eventmanager.wesamabadi.com",
+      description: "Spring boot app to manage events, seminars and workshops.",
+      stack: [<BiLogoSpringBoot />, <SiMysql />, <SiApachemaven />],
+    },
+    {
+      name: "Movie Mate",
+      url: "https://moviemate.wesamabadi.com",
+      description: "Movie streaming & rating site.",
+      stack: [<SiSvelte />, <IoLogoFirebase />],
+    },
+    {
+      name: "Website Alchemist",
+      url: "https://github.com/WesamAbadi/WebsiteAlchemist",
+      description: "A Chrome extension to add custom code to any website.",
+      stack: [<FaChrome />],
+    },
+
+    {
+      name: "Product Price Tracker",
+      url: "https://github.com/WesamAbadi/Product-price-tracker",
+      description: "A product price tracker and price chart maker.",
+      stack: [<FaPython />, <IoLogoWindows />],
+    },
+    {
+      name: "Foto",
+      url: "https://github.com/ExtrosDevs/Foto",
+      description: "Photo-hosting website made using Django.",
+      stack: [<FaPython />, <DiSqllite />],
+    },
+  ];
+
   return (
     <div className="hero">
       <div className="container">
@@ -70,93 +123,18 @@ function Home() {
               <h2>Projects</h2>
             </div>
             <div className="projects">
-              <div className="project">
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://language.wesamabadi.com"
-                >
-                  <div className="project-div">
-                    <h3>Language Master</h3>
-                    <p>
-                      Language Learning App With Interactive Lessons & Real-time
-                      Progress Tracking.
-                    </p>
-                    <div className="stack">
-                      <FaReact />
-                      <IoLogoFirebase />
-                      <FaSass />
+              {projects.map((project, index) => (
+                <div key={index} className="project">
+                  <a target="_blank" rel="noreferrer" href={project.url}>
+                    <div className="project-div">
+                      <h3>{project.name}</h3>
+                      <p>{project.description}</p>
+                      <div className="stack">{project.stack}</div>
                     </div>
-                  </div>
-                </a>
-              </div>
-              <div className="project">
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://moviemate.wesamabadi.com"
-                >
-                  <div className="project-div">
-                    <h3>Movie Mate</h3>
-                    <p>Movie streaming & rating site.</p>
-                    <div className="stack">
-                      <SiSvelte />
-                      <IoLogoFirebase />
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div target="_blank" rel="noreferrer" className="project">
-                <a href="https://github.com/WesamAbadi/WebsiteAlchemist">
-                  <div className="project-div">
-                    <h3>Website Alchemist</h3>
-                    <p>A Chrome extension to add custom code to any website.</p>
-                    <div className="stack">
-                      <FaChrome />
-                    </div>
-                  </div>
-                </a>
-              </div>
+                  </a>
+                </div>
+              ))}
 
-              <div target="_blank" rel="noreferrer" className="project">
-                <a href="https://eventmanager.wesamabadi.com">
-                  <div className="project-div">
-                    <h3>Events Manager</h3>
-                    <p>
-                      Spring boot app to manage events, seminars and workshops.
-                    </p>
-                    <div className="stack">
-                      <BiLogoSpringBoot />
-                      <SiMysql />
-                      <SiApachemaven />
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div target="_blank" rel="noreferrer" className="project">
-                <a href="https://github.com/WesamAbadi/Product-price-tracker">
-                  <div className="project-div">
-                    <h3>Product Price Tracker</h3>
-                    <p>A product price tracker and price chart maker.</p>
-                    <div className="stack">
-                      <FaPython />
-                      <IoLogoWindows />
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div target="_blank" rel="noreferrer" className="project">
-                <a href="https://github.com/ExtrosDevs/Foto">
-                  <div className="project-div">
-                    <h3>Foto</h3>
-                    <p>Photo-hosting website made using Django.</p>
-                    <div className="stack">
-                      <FaPython />
-                      <DiSqllite />
-                    </div>
-                  </div>
-                </a>
-              </div>
               <div target="_blank" rel="noreferrer" className="project github">
                 <a href="https://github.com/WesamAbadi">
                   <div className="project-div">

@@ -1,27 +1,38 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 0.5rem;
+  justify-content: space-between;
+  padding: 0.2rem;
   border-bottom: 1px solid #41414161;
+}
 
-  h1 {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
+.header-icons {
+  display: flex;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.header a {
+  margin: 0 3.5rem;
+  font-size: 26px;
+  transition: all 0.2s;
+}
+
+.header a:hover {
+  margin: 0 4rem;
+}
+.header-text {
+  margin: 0px 20px;
   a {
-    margin: 0 3.5rem;
-    font-size: 26px;
-    transition: all 0.2s;
-    &:hover {
-      margin: 0 4rem;
-    }
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 768px) {
-  .header{
-    a{
-      margin: 0 2rem;
-    }
+  .header a {
+    margin: 0 2rem;
   }
 }

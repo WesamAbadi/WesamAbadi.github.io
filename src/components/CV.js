@@ -5,6 +5,7 @@ function CV() {
 
   useEffect(() => {
     window.open(fileUrl);
+    // eslint-disable-next-line
   }, []);
 
   return <div>CV Downloaded</div>;
