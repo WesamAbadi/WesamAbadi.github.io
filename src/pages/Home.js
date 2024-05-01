@@ -1,6 +1,6 @@
 import React from "react";
 import { IoLogoGithub } from "react-icons/io";
-import { SiSvelte, SiMysql, SiApachemaven } from "react-icons/si";
+import { SiSvelte, SiMysql, SiApachemaven, SiNextdotjs } from "react-icons/si";
 import {
   FaHtml5,
   FaReact,
@@ -99,6 +99,7 @@ function Home() {
                       <FaSass />
                       <IoLogoFirebase />
                       <FaReact />
+                      <SiNextdotjs />
                       <SiSvelte />
                     </p>
                   </div>
