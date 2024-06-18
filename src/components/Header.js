@@ -9,7 +9,7 @@ function Header() {
   return (
     <div className="header">
       <div className="header-text">
-        <a href="https://blog.wesamabadi.com/">My Blog</a>
+        <a href="/blog">My Blog</a>
       </div>
       <div className="header-icons">
         <a href="https://github.com/WesamAbadi">
